@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Politics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+
+  </head>  
+  <body>
+<div class="wrapper">
+
+    <div class="header">
+        <h1 class="logo">Krypto Klimate</h1>
+    </div>
+        <div id="hero-container" class="flex-container">
+            <div class="hero-text-wrapper">
+                <h1 class="hero-main-text">
+                    Environmental 
+                </h1>
+                <h1 class="hero-main-text2">
+                    Impact
+                </h1>
+                <p class="hero-desc">
+                    In this section, we will be discussing about the environmental impact of crypto and its energy consumptions annunally. We would also be analysing the differences between Poof of Work and Proof of Stake coins.
+                </p>
+                
+            </div>
+            <div class="hero-image2">
+                <img class="politics" src="img/Politics.png">
+            </div>
+        </div>
+        <div id="nav-bar">
+            <button class="button effect1"><a href="index.html">Crypto</a></button>
+            <button class="button effect1"><a href="environment.html">Environment</a></button>
+            <button class="button effect1"><a href="politics.html">Politics</a></button>
+        </div>
+
+        <div class="politics1-wrapper" >
+            <h2 class="shadow" id="environment1">
+                Global Bitcoin Mining 
+            </h2>
+        </div>
+        <p class="content-3">
+            The map below displays the top countries involved with Bitcoin mining. Data is displayed by their computational hash rate after China bans all cryptocurrency transaction and mining. 
+            Note that China was involved with more than 75% of the global hash rate before the ban and closing down of mining farms in September 2022.
+        </p>
+
+        <div class="mappa" id="mappa">
+                
+        </div>
+
+        <div class="politics1-wrapper" >
+            <h2 class="shadow" id="environment2">
+                Proof of Work Supremacy 
+            </h2>
+
+            <p class="content-3">
+                These graphs below showcase top Proof of work (purple) and Proof of stake (blue) coins relative to the total marketshare that they have in percentages.
+            </p>
+        </div>
+
+        <div class="donut-graph-container flex-container">
+                <div class="donut1">
+                    <canvas id="pieChart"></canvas>
+                </div>
+                <div class="donut2">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="donut3">
+                    <canvas id="posChart"></canvas>
+                </div>
+        </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="pie1.js"></script>
+  <script src="pie2.js"></script>
+    
+  </body>
+</html>
