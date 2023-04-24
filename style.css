@@ -44,10 +44,10 @@ html{
   background-image: url(img/BG3.png);
   background-repeat: no-repeat;
   position: absolute;
-  width: 100%;
+  width: 488px;
   height: 1000px;
   margin: 0px 0px;
-  top: 300%;
+  top: 310%;
   left: 80%;
 
 }
