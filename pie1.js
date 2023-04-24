@@ -2,11 +2,11 @@
 //setup
 
 const data = {
-  labels: ['BitCoin', 'Ethereum', 'Tether', 'XRP', 'Bitcoin Cash', 'LiteCoin','ChainLink','BitcoinSV','EOS','Cardano'],
+  labels: ['BitCoin', 'Ethereum', 'Tether', 'BNB', 'USD Coin','XRP','Cardano','DogeCoin','Polygon','Solana'],
   datasets: [{
-    label: 'PoW vs PoS',
-    data: [65.60, 11.60, 4.50, 3.90, 2.60, 1.80,1.30,1.20,1.20,1.10],
-    backgroundColor:['#613FDF','#613FDF','#1791B1','#1791B1','#613FDF','#613FDF','#1791B1','#613FDF','#1791B1','#1791B1'],
+    label: 'PoW vs PoS marketcap',
+    data: [571367419527, 248516477115, 80950563526, 53406097633, 31791904293, 26585376453,15411167262,13102804279,10803785767,9939726999],
+    backgroundColor:['#613FDF','#1791B1','#E70078','#1791B1','#E70078','#E70078','#1791B1','#613FDF','#1791B1','#1791B1'],
     borderWidth: 1
   }]
 };
@@ -67,11 +67,11 @@ const pieChart = new Chart(
 
 //data of 3rd pie
 const posdata ={
-  labels: ['Proof of Work', 'Proof of stake','other alt coins'],
+  labels: ['BTC', 'ETH'],
   datasets: [{
-    label: 'PoW vs PoS',
-    data: [68.60,24.48,6.92],
-    backgroundColor:['#613FDF','#1791B1','#E70078'],
+    label: 'BTC vs ETH avg transactions',
+    data: [255086,1119292],
+    backgroundColor:['#613FDF','#1791B1'],
     borderWidth: 1
   }]
 };

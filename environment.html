@@ -4,16 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="mappa.js"></script>
     <title>Politics</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
+     
 
   </head>  
   <body>
+
+ <div class="bg-wrapper">
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+        <div class="bg4"></div>
+</div>
+
 <div class="wrapper">
 
     <div class="header">
@@ -33,7 +43,7 @@
                 
             </div>
             <div class="hero-image2">
-                <img class="politics" src="img/Politics.png">
+                <img class="politics" src="img/environment.png">
             </div>
         </div>
         <div id="nav-bar">
@@ -48,40 +58,83 @@
             </h2>
         </div>
         <p class="content-3">
-            The map below displays the top countries involved with Bitcoin mining. Data is displayed by their computational hash rate after China bans all cryptocurrency transaction and mining. 
-            Note that China was involved with more than 75% of the global hash rate before the ban and closing down of mining farms in September 2022.
+            The map below displays the top countries involved with Bitcoin mining. Data is displayed by their computational hash rate in percentages after China bans all cryptocurrency transaction and mining. 
+            Note that China was involved with more than 75% of the global hash rate before the ban and closing down of mining farms in March 2021. This caused many miners to flee to Kazakhstan and America to continue their endeavours. Below is a map displaying countries hashrate in Jan '22'. As you can see China still has mining operations even after the ban as miners would use VPN spoofing to keep authorities at bay.
         </p>
 
         <div class="mappa" id="mappa">
-                
+             
         </div>
+
+        <p class="content-3">
+            The general worry is the kind of energy that these countries were using to produce the electricity required to power the computers were going to emit excessive amounts of Co2. Kazakhstan use the burning of fossil fuels like coal to power most of their bitcoin mining operation as it is cheaper alternative than renewable energy like hydro-electricity and wind energy. In the end of 2022 the Bitcoin mining industry's sustainable energy mix was estimated to be at 59.4%.
+        </p>
+
 
         <div class="politics1-wrapper" >
             <h2 class="shadow" id="environment2">
-                Proof of Work Supremacy 
+                Proof of Work Supremacy?
             </h2>
 
             <p class="content-3">
-                These graphs below showcase top Proof of work (purple) and Proof of stake (blue) coins relative to the total marketshare that they have in percentages.
+                These graphs below showcase top 10 Proof of work (purple), Proof of stake (blue) and alternative coins (red).
             </p>
         </div>
 
         <div class="donut-graph-container flex-container">
                 <div class="donut1">
                     <canvas id="pieChart"></canvas>
+                    <p class="donut-disc">This donut graph represents the total marketshare of crypto of 1.25T USD and the dominance of Proof of Work Coins over Proof of Stake and alternative coins in percentages on 17/4/23. </p>
                 </div>
                 <div class="donut2">
                     <canvas id="myChart"></canvas>
+                    <p class="donut-disc">This represents the top 10 coins in the marketplace, their specific market capitalizations and their authentication algorithm.</p>
                 </div>
                 <div class="donut3">
                     <canvas id="posChart"></canvas>
+                    <p class="donut-disc">Average transactions per day for Bitcoin (proof of work) and Ethereum (proof of stake) in 2022. Ethereum has outperformed Bitcoin by 338% in 2022. </p>
                 </div>
         </div>
+
+        <div class="politics1-wrapper" >
+            <h2 class="shadow" id="environment2">
+                Rise of Proof of Stake
+            </h2>
+
+            <p class="content-4">
+                Due to the growing concerns of Bitcoin mining and the Proof of Work consensus algorithm using alot of energy. Many like the famous Elon Musk have growing concerns of greenhouse gas emission and climate change. Ethereum was Proof of Work coin before 15 September 2022 but merged to be a Proof of Stake coin cutting electricity emissions by 99.9%. Proof of stake coins also have faster transfer speeds and also cheaper rates than its Proof of Work competitor.
+            </p>
+
+            <div class="eth-img-container"><img class="eth" src="img/ethicon.png"></div>
+
+            <div class="ethcontent flex-container">
+                <div class="avgbefore">
+                    <h1>93.98 TWh</h1>
+                    <p>Highest average annual electricity consumption by Ethereum before switching to Proof of Stake in terawatt-hours (TWh)</p>
+                </div>
+
+                <div class="avgafter">
+                    <h1>0.01 TWh</h1>
+                    <p>Average annual electircity consumption after the switch to Proof of Stake in terawatt-hours (TWh)</p>
+                </div>
+                
+            </div>
+
+            <div class="eth-img-container"><img class="eth" src="img/bitcoinicon.png"></div>
+            <div class="btc-twh">
+                <h1>123 TWh</h1>
+                <p>The average annual electricity consumption by Bitcoin surpassing countries electricity consumption like Norway </p>
+            </div>
+        </div>
+
+
+    </div>
+
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
   <script src="pie1.js"></script>
-  <script src="pie2.js"></script>
+  <script src="map.js"></script>
     
   </body>
 </html>
